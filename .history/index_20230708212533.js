@@ -1,0 +1,17 @@
+function darkTheme() {
+  document.body.classList.toggle("dark-theme");
+}
+
+const characters = document.querySelectorAll(".character");
+
+const description = document.getElementById("description");
+const name = document.getElementById("name");
+
+characters.forEach((character) => {
+  character.addEventListener("mouseenter", () => {
+    const characterSelected = document.getElementsByClassName("selecionado");
+    characterSelected.classList.remove("selecionado");
+
+    character.classList.add("selecionado");
+  });
+});

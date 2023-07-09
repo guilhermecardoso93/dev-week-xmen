@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700&family=Poppins:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #020024;
+  color: #fff;
+  font-family: 'Oxanium', cursive;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+main {
+  background-image: url'(./assets/imagens/bg-desktop.jpg)';
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}

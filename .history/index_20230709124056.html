@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="tema-escuro">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles.css">
+    <title>Dev Week - X-Men</title>
+  </head>
+  <body>
+    <header>
+      <div></div>
+      <img src="./src/assets/imagens/logo.svg" alt="X-men Logo" />
+      <div class="themeDiv">
+        <button class="animated-word" onclick="darkTheme()" />
+      </div>
+    </header>
+    <main class="menu-characters">
+      <section class="characters">
+        <h2 class="title">Selecione um personagem</h2>
+        <ul class="character-list">
+          <li class="character selected" id="ciclope" data-name="ciclope">
+            <img src="./src/assets/imagens/card-ciclope.jpg" alt="Ciclope"
+              data-description="Ele tem o poder de disparar rajadas
+            óticas por um acidente que aconteceu com ele quano criança, mas não consegue controlá-los" />
+          </li>
+          <li class="character" id="havok" data-name="destrutor">
+            <img src="./src/assets/imagens/card-havok.png" alt="Havok" />
+          </li>
+          <li class="character" id="jean-grey" data-name="jean gray"
+            data-description="Jean Grey é uma mutante nível ômega e o principal avatar da Força Fênix, 
+          no qual manifesta poderes cósmicos. A telepatia e telecinese">
+            <img src="./src/assets/imagens/card-jean-grey.jpg" alt="Jean Grey" />
+          </li>
+          <li class="character" id="lince-negra" data-name="lince negra"
+            data-description="Ela tem o poder de atravessar matéria sólida,campos de energia,
+          rajadas ópticas, continuando intacta,e também tem o poder de andar no ar">
+            <img src="./src/assets/imagens/card-lince-negra.jpg"
+              alt="Lince Negra" />
+          </li>
+          <li class="character" id="psylocke" data-name="psylocke"
+            data-description="Betsy Braddock é uma poderosa mutante , manifestando um conjunto de habilidades telepáticas e telecinéticas ao longo dos anos. Além de ser uma excepcional vidente">
+            <img src="./src/assets/imagens/psyface.png" alt="Psylocke" />
+          </li>
+          <li class="character" id="magneto" data-name="magneto"
+            data-description="Ele tem o poder de magnetocinese, ou seja, controlar objetos de metal e criar campos magnéticos">
+            <img src="./src/assets/imagens/card-magneto.jpg" alt="Magneto" />
+          </li>
+          <li class="character" id="xavier" data-name="Professor Xavier"
+            data-description="Professor X é um mutante nível ômega, sendo ele o telepata mais poderosos do universo marvel (só atrás da Jean Grey quando ela está na forma Fênix ). Professor X é capaz de ler os pensamentos de outros ou projeta seus próprios pensamentos, dentro de um raio de aproximadamente 250 milhas (400 km), mas com grande esforço e utilizando todo o seu potencial, seus poderes ficam numa escala global.">
+            <img src="./src/assets/imagens/xavier-card.png" alt="Xavier" />
+          </li>
+          <li class="character" id="iceman" data-name="Homem de Gelo"
+            data-description="Poderes Mutantes: tem a capacidade de criar uma armadura de gelo, absorvendo as moleculas de agua e baixando a sua temperatura. Podendo lançar raios de gelo e criar objetos de gelo e recentemente até regenerar seu corpo quando se esta no estado de gelo.">
+            <img src="./src/assets/imagens/iceman-face.png" alt="Ice Man" />
+          </li>
+          <li class="character" id="noturno" data-name="Noturno"
+            data-description="Ele é um mutante que nasceu com cauda, orelhas pontudas e com o poder de se Teletransportar">
+            <img src="./src/assets/imagens/card-noturno.jpg" alt="Noturno" />
+            <li class="character" id="gambit">
+              <img src="./src/assets/imagens/gambitface.png" alt="Gambit" />
+            </li>
+          </li>
+          <li class="character" id="wolverine" data-name="wolverine"
+            data-description="Poderes. Garras Metálicas. Fator de Cura Regenerativo, Super Agilidade.">
+            <img src="./src/assets/imagens/card-wolverine.jpg" alt="Wolverine" />
+          </li>
+          <li class="character" id="colossus" data-name="Colossus"
+            data-description="É um mutante que assume uma forma blindada (conversão epidérmica), quando seu corpo torna-se totalmente de metal, chamado aço orgânico, que é extremamente resistente, a sua força é ampliada consideravelmente (na escala que varia de 1 a 100 a sua está em 100), e sua velocidade é também ampliada.">
+            <img src="./src/assets/imagens/colossus-card.png" alt="Colossus" />
+          </li>
+          <li class="character" id="beast" data-name="fera"
+            data-description="Hank possui uma super inteligência que chega a ser nível genial, Hank também possui um físico animal 'Felino' por causa de seus testes de cura para sua mutacão; que lhe permite ter garras afiadas e dentes afiados, além de possuir uma força, agilidade, resistência, e velocidade sobre-humanas">
+            <img src="./src/assets/imagens/card-beast-face.png" alt="Beast" />
+          </li> <li class="character" id="tempestade" data-name="tempestade"
+            data-description="Tem o poder de controlar as forças da natureza, muito poderosa ela pode produzir raios, chuvas, gelos, ventos, neblina, entre outros efeitos">
+            <img src="./src/assets/imagens/card-tempestade.jpg" alt="Tempestade" />
+          </li>
+          <li class="character" id="vampira" data-name="vampira"
+            data-description="Ela tem o poder de absorver a vitalidade e memória das pessoas que toca ou no caso dos mutantes os poderes e a memória, 
+          mas só temporariamente">
+            <img src="./src/assets/imagens/card-vampira.jpg" alt="Vampira" />
+          </li>
+        </ul>
+
+      </section>
+      <section class='character-selected'>
+        <img
+          src="./src/assets/imagens/card-wolverine.png"
+          alt="Personagem Selecionado"
+          class="full-img" />
+        <div class="infos">
+          <h2 class='name-info' id='name'>Wolverine</h2>
+          <p class="description-info" id="description">
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

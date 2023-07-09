@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="tema-escuro">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles.css">
+    <title>Dev Week - X-Men</title>
+  </head>
+  <body>
+    <header>
+      <div></div>
+      <img src="./src/assets/imagens/logo.svg" alt="X-men Logo" />
+      <div class="themeDiv">
+        <button class="animated-word"  onclick="darkTheme()"/>
+      </div>
+    </header>
+    <main class="menu-characters">
+      <section class="characters">
+        <h2 class="title">Selecione um personagem</h2>
+        <ul class="character-list">
+          <li class="character" id="ciclope" data-name="ciclope">
+            <img src="./src/assets/imagens/card-ciclope.jpg" alt="Ciclope" />
+          </li>
+          <li class="character" id="havok" data-name="destrutor">
+            <img src="./src/assets/imagens/card-havok.png" alt="Havok" />
+          </li>
+          <li class="character" id="jean-grey" data-name="jean gray">
+            <img src="./src/assets/imagens/card-jean-grey.jpg" alt="Jean Grey" />
+          </li>
+          <li class="character" id="lince-negra" data-name="lince negra">
+            <img src="./src/assets/imagens/card-lince-negra.jpg"
+              alt="Lince Negra" />
+          </li>
+          <li class="character" id="psylocke" data-name="psylocke">
+            <img src="./src/assets/imagens/psyface.png" alt="Psylocke" />
+          </li>
+          <li class="character" id="magneto" data-name="magneto">
+            <img src="./src/assets/imagens/card-magneto.jpg" alt="Magneto" />
+          </li>
+          <li class="character" id="Xavier" data-name="Professor Xavier">
+            <img src="./src/assets/imagens/xavier-card.png" alt="Xavier" />
+          </li>
+          <li class="character" id="iceman" data-name="Homem de Gelo">
+            <img src="./src/assets/imagens/iceman-face.png" alt="Ice Man" />
+          </li>
+          <li class="character" id="noturno" data-name="Noturno">
+            <img src="./src/assets/imagens/card-noturno.jpg" alt="Noturno" />
+            <li class="character" id="gambit">
+              <img src="./src/assets/imagens/gambitface.png" alt="Gambit" />
+            </li>
+          </li>
+          <li class="character" id="colossus" data-name="Colossus">
+            <img src="./src/assets/imagens/colossus-card.png" alt="Colossus" />
+          </li>
+          <li class="character" id="tempestade" data-name="tempestade">
+            <img src="./src/assets/imagens/card-tempestade.jpg" alt="Tempestade" />
+          </li>
+          <li class="character" id="vampira" data-name="vampira">
+            <img src="./src/assets/imagens/card-vampira.jpg" alt="Vampira" />
+          </li>
+          <li class="character" id="wolverine" data-name="wolverine">
+            <img src="./src/assets/imagens/card-wolverine.jpg" alt="Wolverine" />
+          </li>
+          <li class="character" id="beast" data-name="fera">
+            <img src="./src/assets/imagens/beast-card.png" alt="Beast" />
+          </li>
+        </ul>
+
+      </section>
+      <section class='character-selected'>
+        <img
+          src="./src/assets/imagens/card-wolverine.png"
+          alt="Personagem Selecionado"
+          class="full-img" />
+        <div class="infos">
+          <h2 class='name-info' id='name'>Wolverine</h2>
+          <p class="description-info" id="description">
+          </p>
+        </div>
+      </section>
+    </main>
+  <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #020024;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+main {
+  background-image: url'(./assets/imagens/bg-desktop.jpg)';
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
